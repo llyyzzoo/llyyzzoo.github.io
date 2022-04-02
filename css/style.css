@@ -24,6 +24,7 @@ body
     letter-spacing: 0.6px;
     color: var(--font-color-2);
     background: #111;
+    overflow-x：hidden;
 }
 a
 {
