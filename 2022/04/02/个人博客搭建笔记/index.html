@@ -43,17 +43,13 @@
     
 
     <div class="post-md">
-        <h3 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h3><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><p>下载git、Node.js、一个文本编辑器<br>教程：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">https://www.cnblogs.com/xueweisuoyong/p/11914045.html</a>     </p>
-<h4 id="检验下载"><a href="#检验下载" class="headerlink" title="检验下载"></a>检验下载</h4><p>win+r再cmd<br>输入以下内容：<br>node -v<br>npm -v<br>git –version<br>hexo下载：npm install express -g<br>hexo -v</p>
-<h4 id="注册github"><a href="#注册github" class="headerlink" title="注册github"></a>注册github</h4><p>github账号注册：<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv5107169">https://www.bilibili.com/read/cv5107169</a></p>
-<h4 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h4><h4 id="本地与github绑定"><a href="#本地与github绑定" class="headerlink" title="本地与github绑定"></a>本地与github绑定</h4><p>在任意位置右键git bash<br>生成ssh:ssh-keygen -t rsa -C “邮箱地址”<br>.ssh生成路径：C:\Users\你他娘的用户名.ssh<br>复制<br>测定ssh是否绑定成功：ssh -T <a href="mailto:&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#x6f;&#109;">&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#x6f;&#109;</a></p>
-<p>如果一直出现ssh: connect to host github.com port 22: Connection refused的话具体看这个教程<a target="_blank" rel="noopener" href="https://www.cnblogs.com/Archer314/p/14641310.html">https://www.cnblogs.com/Archer314/p/14641310.html</a></p>
-<h4 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h4><p>选好位置<br>hexo init #初始化hexo博客<br>如果报错SyntaxError: Unexpected token …<br>建议更新一下node.js版本<br>hexo s #静态生成hexo页面</p>
-<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>配置文件修改(_config.yml)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repository: https://github.com/你的名字/仓库的名字.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
-
-<p>在根目录git bash<br>安装hexo-deployer-git自动部署发布工具:<br>npm install hexo-deployer-git –save</p>
-<p>hexo g生成<br>hexo d部署<br>hexo s查看</p>
+        <h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>下载git、Node.js、一个文本编辑器<br>教程：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">https://www.cnblogs.com/xueweisuoyong/p/11914045.html</a>     </p>
+<h3 id="检验下载"><a href="#检验下载" class="headerlink" title="检验下载"></a>检验下载</h3><p>win+r再cmd<br>输入以下内容：<br>node -v<br>npm -v<br>git –version<br>hexo下载：npm install express -g<br>hexo -v</p>
+<h3 id="注册github"><a href="#注册github" class="headerlink" title="注册github"></a>注册github</h3><p>github账号注册：<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv5107169">https://www.bilibili.com/read/cv5107169</a></p>
+<h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><h3 id="本地与github绑定"><a href="#本地与github绑定" class="headerlink" title="本地与github绑定"></a>本地与github绑定</h3><p>在任意位置右键git bash<br>生成ssh:ssh-keygen -t rsa -C “邮箱地址”<br>.ssh生成路径：C:\Users\你他娘的用户名.ssh<br>复制文件内容<br>测定ssh是否绑定成功：ssh -T <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#x62;&#x2e;&#99;&#111;&#109;">&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#x62;&#x2e;&#99;&#111;&#109;</a><br>如果一直出现ssh: connect to host github.com port 22: Connection refused的话具体看这个教程<a target="_blank" rel="noopener" href="https://www.cnblogs.com/Archer314/p/14641310.html">https://www.cnblogs.com/Archer314/p/14641310.html</a></p>
+<h3 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h3><p>选好位置<br>hexo init #初始化hexo博客<br>如果报错SyntaxError: Unexpected token …<br>建议更新一下node.js版本<br>hexo s #静态生成hexo页面</p>
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>配置文件修改(_config.yml)<br>deploy:<br>  type: ‘git’<br>  repository: <a target="_blank" rel="noopener" href="https://github.com/%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97/%E4%BB%93%E5%BA%93%E7%9A%84%E5%90%8D%E5%AD%97.git">https://github.com/你的名字/仓库的名字.git</a><br>  branch: main</p>
+<p>在根目录git bash<br>安装hexo-deployer-git自动部署发布工具:<br>npm install hexo-deployer-git –save<br>hexo g生成<br>hexo d部署<br>hexo s<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv5107169">查看</a></p>
 
     </div>
 
