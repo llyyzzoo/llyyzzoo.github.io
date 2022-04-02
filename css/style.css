@@ -167,11 +167,15 @@ a
 .post-except
 {
     margin-bottom: 12px;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow：hidden
+
 }
 .read-more
 {
     padding: 0 4px;
-    color: var(--font-color-0);   
+    color: var(--font-color-0);
 }
 .read-more:before,
 .read-more:after
